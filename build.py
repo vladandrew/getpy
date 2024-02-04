@@ -6,33 +6,8 @@ import numpy as np
 # byteset_lengths = [4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64]
 byteset_lengths = [8, 16, 32, 64, 128, 256]
 
-key_types = [
-    'u4',
-    'u8',
-
-    'i4',
-    'i8',
-
-    *[f'S{i}' for i in byteset_lengths],
-]
-
-
-value_types = [
-    'u1',
-    'u2',
-    'u4',
-    'u8',
-
-    'i1',
-    'i2',
-    'i4',
-    'i8',
-
-    'f4',
-    'f8',
-
-    *[f'S{i}' for i in byteset_lengths]
-]
+key_types = ['uint64']
+value_types = ['uint8']
 
 
 cpp_types = {
